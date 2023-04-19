@@ -52,11 +52,11 @@ form input {
   padding: 7px 5px;
   border: 1px solid gainsboro;
   border-radius: 5px;
-  color: gray;
+  color:dimgray;
 }
 
 form input::placeholder {
-  color: rgb(187, 187, 187);
+  color: rgb(234, 234, 234);
 }
 
 .buttonRegisterAddress {

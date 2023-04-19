@@ -27,12 +27,12 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #303234;
   gap: 10px;
-  padding: 10px 0px;
   z-index: 1;
 }
 
@@ -79,6 +79,7 @@ body::-webkit-scrollbar-thumb {
 
 .iconesTop li {
   padding: 5px;
+
 }
 
 .iconesTop i {
@@ -87,9 +88,12 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.5s;
 }
 
-.buttonMenu {
-  transform: scale(1.5);
+.buttonMenu{
+  font-size: 17pt;
+
 }
+
+
 
 .iconesTop i:hover {
   color: orange;
@@ -108,12 +112,14 @@ body::-webkit-scrollbar-thumb {
 .contCart {
   position: absolute;
   background-color: orange;
-  color: white;
-  font-size: 8pt;
-  width: 15px;
-  height: 15px;
+  color:black;
+  font-size: 10pt;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
-  display: flex;
+  display:none;
   justify-content: center;
   align-items: center;
   transform: translateY(-10px) translateX(-15px);
@@ -173,7 +179,8 @@ header {
   cursor: pointer;
   border-radius: 20px;
   font-size: 10pt;
-  color: white;
+  color: black;
+  font-weight: 600;
   background-color: orange;
   letter-spacing: 1px;
   font-family: "Dosis", sans-serif;
@@ -283,9 +290,7 @@ header {
   background-position: 30% 30%;
 }
 
-.container-galeria img:hover {
-  filter: grayscale(100%);
-}
+
 
 footer {
   text-align: center;

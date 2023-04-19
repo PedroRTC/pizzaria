@@ -17,8 +17,8 @@ function expandirMenu(){
   setTimeout(() => {
     menuSide.style.transform="translateX(0%)"
     buttonMenu.style.transform="rotateX(180deg) scale(1.4)"
-    buttonMenu.classList.remove("fa-bars")
-    buttonMenu.classList.add("fa-times")
+    buttonMenu.classList.remove("bi-justify-right")
+    buttonMenu.classList.add("bi-x-lg")
   }, 100);
  
   buttonMenu.removeEventListener("click", expandirMenu)
@@ -34,8 +34,8 @@ function removerMenu(){
     buttonMenu.style.transform="rotateX(0deg) scale(1.4)"
     setTimeout(() => {
       menuSide.style.display="none"
-      buttonMenu.classList.add("fa-bars")
-      buttonMenu.classList.remove("fa-times")
+      buttonMenu.classList.remove("bi-x-lg")
+      buttonMenu.classList.add("bi-justify-right")
     }, 400);
   
   buttonMenu.addEventListener("click", expandirMenu)

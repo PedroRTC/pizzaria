@@ -353,7 +353,7 @@
         "nome": "Macaxeira frita",
         "img": "img/porcoes/macaxeira.png",
         "ingrediente.": "300G",
-        "valor": "7,99",
+        "valor": "7.99",
         "categoria": "Porção"
     },
     {
@@ -465,7 +465,6 @@
         "nome": "Coca cola lata",
         "img": "img/bebida/coca-cola-lata.png",
         "valor": "3.50",
-        "pesquisa": "",
         "categoria": "Bebida"
     }
 ]

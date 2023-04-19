@@ -123,10 +123,11 @@
 }
 
 .containerAmount {
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 20%;
   margin-bottom: 0%;
   background-color: #585b5c;

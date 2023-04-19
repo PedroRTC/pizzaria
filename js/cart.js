@@ -4,9 +4,6 @@ let contCart = document.querySelector(".contCart");
 let amount = document.querySelector(".amount");
 let buttonOrder = document.querySelector(".buttonOrder");
 
-let containerCheckRequest = document.querySelector(".containerCheckRequest");
-let containerRequest = document.querySelector(".containerRequest");
-let checkAmount = document.querySelector(".checkAmount");
 
 let backendCart = [];
 let backendAmount = 0;
@@ -19,6 +16,7 @@ let arr = Number(backendAmount);
 amount.textContent = arr.toFixed(2);
 
 function addBackendCars(item) {
+ 
   let dataAmount = (backendAmount = JSON.parse(
     localStorage.getItem("backendAmount")
   ));
@@ -93,6 +91,12 @@ function storeSnackCart() {
     buttonDeleteSnacks.addEventListener("click", () =>
       deleteCartSnacks(cart, snacks, qntSnacks)
     );
+
+    if(backendCart.length > 0){
+      contCart.style.display="flex"
+    }else{
+      contCart.style.display=""
+    }
   });
 }
 storeSnackCart();
@@ -137,42 +141,3 @@ function deleteCartSnacks(cart, snacks, qntSnacks) {
   localStorage.setItem("backendAmount", JSON.stringify(arr.toFixed(2)));
 }
 
-buttonOrder.addEventListener("click", checkRequest);
-
-function checkRequest() {
-  removeCars();
-  containerCheckRequest.style.display = "flex";
-  backendCart.map((snacks) => {
-    let snacksRequest = createElementWithClass("section", "snacksRequest");
-    let imgSnaksRequest = createElementWithClass("img", "imgSnaksRequest");
-    let infoSnacksResquest = createElementWithClass(
-      "div",
-      "infoSnacksResquest"
-    );
-
-    imgSnaksRequest.src = snacks.img;
-    infoSnacksResquest.innerHTML = `<p>${snacks.categoria} ${snacks.nome}</p><p>${snacks.valor} R$</p>`;
-
-    snacksRequest.appendChild(imgSnaksRequest);
-    snacksRequest.appendChild(infoSnacksResquest);
-    containerRequest.appendChild(snacksRequest);
-    checkAmount.textContent = `Total: ${amount.textContent} R$`;
-  });
-}
-
-/*
-
-function SendRequest() {
-  let pedido = containerCart.textContent.split("                   ");
-  console.log(pedido);
-
-  buttonOrder.setAttribute(
-    "href",
-    `https://wa.me/5585988996987?text= 
-     PEDIDO:%20${pedido}%20
-     (TOTAL:%20${amount.textContent}R$)`
-  );
-  
-}
-
-  */

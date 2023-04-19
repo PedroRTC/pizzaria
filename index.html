@@ -14,6 +14,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   </head> 
 
   <body>
@@ -29,13 +31,14 @@
 
       <ul class="iconesTop">
         <li class="buttonSearch">
-          <i class="fa fa-search" aria-hidden="true"></i>
+          <i class="bi bi-search"></i>
         </li>
         <li class="buttonCars">
           <span class="contCart">0</span
+            
           ><i class="fa fa-shopping-basket" aria-hidden="true"></i>
         </li>
-        <li><i class="fa fa-bars buttonMenu" aria-hidden="true"></i></li>
+        <li><i class="bi bi-justify-right buttonMenu" aria-hidden="true"></i></li>
       </ul>
     </nav>
 
@@ -186,37 +189,37 @@
         <form action="">
           <section class="containerInput">
             <div>
-              <label for="">Nome</label>
-              <input type="text" placeholder="Pedro" />
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="client" placeholder="Pedro" required />
             </div>
 
             <div>
-              <label for="">Telefone</label>
-              <input type="text" placeholder="(85)92222-2222" />
-            </div>
-          </section>
-
-          <section class="containerInput">
-            <div>
-              <label for="">CEP</label>
-              <input type="text" placeholder="14015-040" />
-            </div>
-
-            <div>
-              <label for="">Bairro</label>
-              <input type="text" />
+              <label for="phone">Telefone</label>
+              <input type="text" id="phone" name="phone" placeholder="(85)92222-2222" required />
             </div>
           </section>
 
           <section class="containerInput">
             <div>
-              <label for="">Rua</label>
-              <input type="text" />
+              <label for="zipCode">CEP</label>
+              <input type="text" id="zipCode" name="zipCode"placeholder="14015-040" required />
             </div>
 
             <div>
-              <label for="">Numero da casa</label>
-              <input type="text" />
+              <label for="burgh">Bairro</label>
+              <input type="text" id="burgh" name="burgh" placeholder="Santa rosa" required/>
+            </div>
+          </section>
+
+          <section class="containerInput">
+            <div>
+              <label for="road">Rua</label>
+              <input type="text" id="road" name="road" placeholder="matheus lemo" required />
+            </div>
+
+            <div>
+              <label for="houseNumber">Numero da casa</label>
+              <input type="text" id="houseNumber"  name="houseNumber"  placeholder="105" required />
             </div>
           </section>
 
@@ -250,5 +253,6 @@
     <script src="js/http.js"></script>
     <script src="js/products.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/checkRequest.js"></script>
   </body>
 </html>
