@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/promotion.css" />
+    <link rel="stylesheet" href="css/checkRequest.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head> 
+
+  <body>
+    <a id="HOME"></a>
+    <nav class="menuTop">
+      <div class="divLogo"><h1>Família Vieira</h1></div>
+
+      <ul class="itemsTop">
+        <li><a href="#HOME">Inicio</a></li>
+        <li><a href="#PROMOTION">Promoção</a></li>
+        <li><a href="#GALLERY">Galeria</a></li>
+      </ul>
+
+      <ul class="iconesTop">
+        <li class="buttonSearch">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </li>
+        <li class="buttonCars">
+          <span class="contCart">0</span
+          ><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </li>
+        <li><i class="fa fa-bars buttonMenu" aria-hidden="true"></i></li>
+      </ul>
+    </nav>
+
+    <header>
+      <section class="contHeader">
+        <p>
+          Temos vários tipos de lanches,<br />
+          Faça já o seu Pedido
+        </p>
+        <a href="#CARDAP">Explorar Cardapío</a>
+      </section>
+
+      <section class="networks">
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      </section>
+    </header>
+
+    <section class="menuSide">
+      <ul>
+        <li>
+          <a href=""
+            ><img src="img/compartilhar-link.png" alt="" />Compatilhar</a
+          >
+        </li>
+        <li>
+          <a href=""><img src="img/pizza.png" alt="" />Pizza</a>
+        </li>
+        <li>
+          <a href=""><img src="img/sfiha.png" alt="" />Esfiha</a>
+        </li>
+        <li>
+          <a href=""><img src="img/porcoes.png" alt="" />Porções</a>
+        </li>
+        <li>
+          <a href=""><img src="img/bebidas.png" alt="" />Bebidas</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cart">
+      <section class="sectionTop">
+        <p><span class="qntPro">0</span></p>
+        <p class="CloseCartButton">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </p>
+      </section>
+
+      <section class="containerCart"></section>
+
+      <section class="containerAmount">
+        <p class="valueAmount">
+          <span class="nameAmount">TOTAL: R$</span>
+          <span class="amount"> 00.00 </span>
+        </p>
+        <a target="_blank" class="buttonOrder">Fazer pedido</a>
+      </section>
+    </section>
+
+    <a id="CARDAP"></a>
+    <section class="cardap">
+      <div class="headerCardap">
+        <span class="caption">NOSSO MENU</span>
+        <h1 class="allTitles">Cardápio</h1>
+        <hr class="hrTitle" />
+      </div>
+
+      <div class="allProducts sectionPizza">
+        <h2 class="sectionTitle">Seção de Pizza</h2>
+
+        <section class="containerButton">
+          <button class="arrowLeft"></button>
+          <button class="arrowRight"></button>
+        </section>
+
+        <section class="containerProducts containerPizza"></section>
+      </div>
+
+      <div class="allProducts sectionEsfiha">
+        <h2 class="sectionTitle">Seção de Esfiha</h2>
+
+        <section class="containerButton">
+          <button class="arrowLeft"></button>
+          <button class="arrowRight"></button>
+        </section>
+        <section class="containerProducts containerEsfiha"></section>
+      </div>
+
+      <div class="allProducts sectionDrinks">
+        <h2 class="sectionTitle">Seção de Bedidas</h2>
+        <section class="containerButton">
+          <button class="arrowLeft"></button>
+          <button class="arrowRight"></button>
+        </section>
+        <section class="containerProducts containerDrinks"></section>
+      </div>
+
+      <div class="allProducts sectionPortions">
+        <h2 class="sectionTitle">Seção de Porções</h2>
+        <section class="containerButton">
+          <button class="arrowLeft"></button>
+          <button class="arrowRight"></button>
+        </section>
+        <section class="containerProducts containerPortions"></section>
+      </div>
+    </section>
+
+    <a id="PROMOTION"></a>
+    <section class="promotion">
+      <div class="containerPromotion">
+        <section class="descriptionPromotion">
+          <h2>Pizza mais refrigerante 1L</h2>
+
+          <p>Mussarela, Calabreza, Mista e Frango</p>
+          <p>Guarana ou pepsi</p>
+          <span>R$25,99</span>
+          <button>Fazer Pedido</button>
+        </section>
+
+        <img src="img/fundo-pPizza.png" class="imgPromotion" />
+      </div>
+    </section>
+
+    <a id="GALLERY"></a>
+    <section class="galeria">
+      <p class="caption">NOSSA GALERIA</p>
+      <h2 class="allTitles">Galeria</h2>
+      <hr class="hrTitle" />
+      <div class="container-galeria">
+        <img src="img/galeria/pizzaria-img (1).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (2).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (3).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (4).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (5).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (6).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (7).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (8).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (9).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (10).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (11).jpg" alt="" />
+        <img src="img/galeria/pizzaria-img (12).jpg" alt="" />
+      </div>
+    </section>
+
+    <div class="containerCheckRequest">
+      <section class="sectionCheckRequest">
+        <form action="">
+          <section class="containerInput">
+            <div>
+              <label for="">Nome</label>
+              <input type="text" placeholder="Pedro" />
+            </div>
+
+            <div>
+              <label for="">Telefone</label>
+              <input type="text" placeholder="(85)92222-2222" />
+            </div>
+          </section>
+
+          <section class="containerInput">
+            <div>
+              <label for="">CEP</label>
+              <input type="text" placeholder="14015-040" />
+            </div>
+
+            <div>
+              <label for="">Bairro</label>
+              <input type="text" />
+            </div>
+          </section>
+
+          <section class="containerInput">
+            <div>
+              <label for="">Rua</label>
+              <input type="text" />
+            </div>
+
+            <div>
+              <label for="">Numero da casa</label>
+              <input type="text" />
+            </div>
+          </section>
+
+          <section class="containerInput">
+            <button class="buttonRegisterAddress">Salvar endereço</button>
+          </section>
+        </form>
+
+        <div class="request">
+          <h4>Seu Pedido</h4>
+          <section class="containerRequest"></section>
+          <p class="checkAmount"></p>
+          <section class="sectionButtonRequest">
+            <button class="send">Enviar</button>
+            <button class="cancel">Cancelar</button>
+          </section>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <section class="redeFooter">
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-cutlery" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      </section>
+      <hr />
+      <p>Todos os direitos reservados por Pizzaria Familía Vieira</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/http.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

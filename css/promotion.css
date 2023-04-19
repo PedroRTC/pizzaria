@@ -1,0 +1,94 @@
+
+
+
+
+.promotion{
+    margin: auto;
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 20px;
+    width: 90%;
+
+  
+}
+
+.containerPromotion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+
+.descriptionPromotion{
+    text-align: left;
+    width: 100%;
+    line-height: 50px;
+    font-family: 'Handlee', cursive;
+    color: white;
+   
+}
+
+.descriptionPromotion{
+  
+    letter-spacing: 2px;
+    font-size: 25pt;
+}
+
+.descriptionPromotion p{
+    font-size: 14pt;
+}
+
+.descriptionPromotion span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    padding: 3px;
+    color:orange;
+    border-radius: 50%;
+    font-size: 20pt;
+    letter-spacing: 0px;
+    border: 2px solid orange;
+    
+}
+
+.imgPromotion{
+    width:100% ;
+    height:400px ;
+    background-size: cover;
+}
+
+.descriptionPromotion button{
+    margin-top: 30px;
+    width: 200px;
+    height: 35px;
+   border:none ;
+   cursor: pointer;
+   background-color: orange;
+   color: black;
+   font-family: 'Dosis', sans-serif;
+   letter-spacing: 2px ;
+   font-weight: 700;
+   border-radius: 20px;
+}
+
+@media screen and (max-width: 950px){
+   .containerPromotion{
+    display: inline-block;
+   }
+
+   .descriptionPromotion{
+    margin: auto;
+    width: 100% ;
+   }
+    
+   .imgPromotion{
+    height: auto;
+   }
+
+   
+}

@@ -1,0 +1,157 @@
+.containerCheckRequest {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  backdrop-filter: blur(3px);
+}
+
+
+
+.sectionCheckRequest {
+  background-color: white;
+  width: 50%;
+  border-radius: 5px;
+  padding: 20px 0px;
+  font-family: "Dosis", sans-serif;
+}
+
+form {
+  margin: auto;
+  width: 85%;
+
+  margin-bottom: 20px;
+}
+
+.containerInput {
+  display: flex;
+  gap: 15px;
+  margin: 5px 0px;
+}
+
+.containerInput div {
+  width: 100%;
+}
+
+form label {
+  width: 100%;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 10pt;
+}
+
+form input {
+  width: 96%;
+  outline: none;
+  padding: 7px 5px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  color: gray;
+}
+
+form input::placeholder {
+  color: rgb(187, 187, 187);
+}
+
+.buttonRegisterAddress {
+  border: none;
+  height: 30px;
+  padding: 0px 20px;
+  cursor: pointer;
+  background-color: rgba(255, 166, 0, 0.244);
+  border: 1px solid rgba(255, 166, 0, 0.752);
+  border-radius: 3px;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.request {
+  margin: auto;
+  width: 85%;
+}
+
+.containerRequest {
+  height: 235px;
+  overflow-y: auto;
+}
+
+.containerRequest::-webkit-scrollbar {
+  width: 5px;
+}
+
+.containerRequest::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
+.snacksRequest {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid gainsboro;
+  margin: 5px 0px;
+  padding: 5px;
+}
+
+.imgSnaksRequest {
+  width: 60px;
+  height: 60px;
+}
+
+.infoSnacksResquest {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+
+.sectionButtonRequest {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.sectionButtonRequest button {
+  height: 30px;
+  padding: 0px 30px;
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.send {
+  background-color: orange;
+
+  border: none;
+}
+
+.cancel {
+  background-color: rgba(255, 0, 0, 0.238);
+  border: 1px solid red;
+}
+
+.checkAmount {
+  font-size: 14pt;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 750px) {
+  .sectionCheckRequest {
+    width: 100%;
+    height: 100%;
+  }
+}

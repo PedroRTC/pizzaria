@@ -1,0 +1,471 @@
+[
+    {
+        "nome": "Toscana",
+        "img": "img/pizza/toscana.png",
+        "ingredientes": "mussarela, calabresa, moída, pimenta calabresa, cebola",
+        "valor": "22.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Mussarela",
+        "img": "img/pizza/mussarela.png",
+        "ingredientes": "mussarela, tomate",
+        "valor": "22.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Mista",
+        "img": "img/pizza/mista.png",
+        "ingredientes": "mussarela, presunto, cebola",
+        "valor": "22.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Milho",
+        "img": "img/pizza/milho.png",
+        "ingredientes": "mussarela, milho, cebola",
+        "valor": "22.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Calabresa",
+        "img": "img/pizza/calabresa.jpg",
+        "ingredientes": "mussarela, calabresa, cebola",
+        "valor": "22.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Vegetariana",
+        "img": "img/pizza/vegetariana.jpg",
+        "ingredientes": "mussarela, tomate, pimentão, cebola, milho",
+        "valor": "22.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Margarete",
+        "img": "img/pizza/margarita.jpg",
+        "ingredientes": "mussarela, tomate, manjericão, parmesão",
+        "valor": "22.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Alho",
+        "img": "img/pizza/alho.jpg",
+        "ingredientes": "mussarela, alho frito",
+        "valor": "22.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Napolitano",
+        "img": "img/pizza/napolitano.png",
+        "ingredientes": "mussarela, presunto, tomate, cebola, pimentão, milho",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "4-Queijos",
+        "img": "img/pizza/4queijos.png",
+        "ingredientes": "mussarela, parmesão, gorgonzola, provolone",
+        "valor": "27.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Presunto-c/abacaxi",
+        "img": "img/pizza/prezunto_c_abacaxi.png",
+        "ingredientes": "mussarela, presunto,  abacaxi",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Portuguesa",
+        "img": "img/pizza/portuguesa.png",
+        "ingredientes": "mussarela, presunto, calabresa, ovo, cebola, pimentão",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Bacon",
+        "img": "img/pizza/bacon.jpg",
+        "ingredientes": "muçarela, bacon, cebola",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Caipira",
+        "img": "img/pizza/Caipira.png",
+        "ingredientes": "mussarela, frango, milho",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Frango-c/ctpy",
+        "img": "img/pizza/frango com requeijao.png",
+        "ingredientes": "mussarela, frango, requeijão",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Calabresa-c/ctpy",
+        "img": "img/pizza/calabresa-requeijão.png",
+        "ingredientes": "mussarela, calabresa, cebola, pimenta , requeijão",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Carbonara ",
+        "img": "img/pizza/carbonara.png",
+        "ingredientes": "mussarela, bacon, ovo, cebola, requeijão ,parmesão",
+        "valor": "27.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Carne do sol ",
+        "img": "img/pizza/carne do sol.png",
+        "ingredientes": "mussarela, carne de sol, cebola",
+        "valor": "27.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Carne do sol-c/ctpy",
+        "img": "img/pizza/carne-de-sol_com_requeijão.png",
+        "ingredientes": "mussarela, carne de sol, cebola, requeijão",
+        "valor": "29.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Sertanejo",
+        "img": "img/pizza/sertaneja.png",
+        "ingredientes": "mussarela, carne de sol, banana, requeijão",
+        "valor": "27.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Camarão",
+        "img": "img/pizza/camarao.png",
+        "ingredientes": "mussarela, tomate, camarrão refogado",
+        "valor": "27.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Camarão-c/ctpy",
+        "img": "img/pizza/camarao-requeijão.png",
+        "ingredientes": "mussarela, tomate,camarrão refogado,requeijão",
+        "valor": "29.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Bolonheza",
+        "img": "img/pizza/bolonhesa.png",
+        "ingredientes": "mussarela, bolonheza, parmesão",
+        "valor": "27.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Família-vieira",
+        "img": "img/pizza/familia vieira.png",
+        "ingredientes": "mussarela, pimenta calabresa, tomate, bacon, carne de sol ,cebola, requeijão",
+        "valor": "29.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Ravenna",
+        "img": "img/pizza/ravenna.png",
+        "ingredientes": "mussarela, salame, alho frito, cebola",
+        "valor": "27.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Atum",
+        "img": "img/pizza/atum.png",
+        "ingredientes": "mussarela, atum, alho frito, cebola",
+        "valor": "27.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Banana-c/canela",
+        "img": "img/pizza/banana e canela.png",
+        "ingredientes": "mussarela, banana, canela, caramelo",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Abacaxi",
+        "img": "img/pizza/abacaxi.png",
+        "ingredientes": "mussarela, abacaxi",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Romeu e julieta",
+        "img": "img/pizza/romeu-julieta.png",
+        "ingredientes": "mussarela, goiabada",
+        "valor": "24.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Chocolate",
+        "img": "img/pizza/chocolate.png",
+        "ingredientes": "mussarela, chocolate",
+        "valor": "29.99",
+        "categoria": "Pizza"
+    },
+    {
+        "nome": "Carne",
+        "img": "img/esfiha/carne.png",
+        "ingredientes": "mussarela, carne, cebola",
+        "valor": "2.30",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "Mussarela",
+        "img": "img/esfiha/mussarela.png",
+        "ingredientes": "mussarela, tomate",
+        "valor": "2.30",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "Carne do sol ",
+        "img": "img/esfiha/carne_do_sol.png",
+        "ingredientes": "mussarela, carne de sol, cebola",
+        "valor": "2.80",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "Carne do sol-c/ctpy",
+        "img": "img/esfiha/carne-do-sol-catupiry.png",
+        "ingredientes": "mussarela, carne de sol, cebola, catupiry",
+        "valor": "3.00",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "Calabresa",
+        "img": "img/esfiha/calabresa.png",
+        "ingredientes": "mussarela, calabresa, cebola",
+        "valor": "2.30",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "Calabresa-c/ctpy",
+        "img": "img/esfiha/calabresa-catupiry.png",
+        "ingredientes": "mussarela,calabresa,cebola,pimenta calabresa,catupiry",
+        "valor": "2.50",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "Frango-c/ctpy",
+        "img": "img/esfiha/frango-com-catupiry.png",
+        "ingredientes": "mussarela, frango, catupiry",
+        "valor": "2.50",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "Frango-c/chedder",
+        "img": "img/esfiha/frango-chedder.png",
+        "ingredientes": "mussarela, frango, chedder",
+        "valor": "2.50",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "2 Queijos",
+        "img": "img/esfiha/2_queijos.png",
+        "ingredientes": "mussarela, parmesão",
+        "valor": "2.30",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "4 Queijos",
+        "img": "img/esfiha/4-queijos.png",
+        "ingredientes": "mussarela, parmesão, requeijão, chedder",
+        "valor": "3.00",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "Bacon",
+        "img": "img/esfiha/bacon.png",
+        "ingredientes": "mussarela, bacon, cebola",
+        "valor": "2.50",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "MISTA",
+        "img": "img/esfiha/mista.png",
+        "ingredientes": "mussarela,prezunto,cebola",
+        "valor": "2.30",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "CHOCOLATE",
+        "img": "img/esfiha/chocolate.png",
+        "ingredientes": "mussarela, chocolate",
+        "valor": "3.00",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "BANANA C/CANELA",
+        "img": "img/esfiha/banana-com-canela.png",
+        "ingredientes": "mussarela, banana, canela, caramelo",
+        "valor": "2.50",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "ABACAXI",
+        "img": "img/esfiha/abacaxi.png",
+        "ingredientes": "mussarela, abacaxi",
+        "valor": "2.50",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "ROMEU E JULIETA",
+        "img": "img/esfiha/romeu_e_julieta.png",
+        "ingredientes": "mussarela, goiabada",
+        "valor": "2.50",
+        "categoria": "Esfiha"
+    },
+    {
+        "nome": "BOLINHAS 12UND",
+        "img": "img/porcoes/bolinha de queijo.png",
+        "ingredientes": "queijo, camarão,peixe e carne do sol",
+        "valor": "11.99",
+        "categoria": "Porção"
+    },
+    {
+        "nome": "PASTELZINHO 12UND",
+        "img": "img/porcoes/pastelzinho.png",
+        "ingredientes": "queijo, mista, carne",
+        "valor": "11.99",
+        "categoria": "Porção"
+    },
+    {
+        "nome": "CAMARÃO",
+        "img": "img/porcoes/camarão.png",
+        "ingredientes": "alho e óleo 300 g.",
+        "valor": "19.99",
+        "categoria": "Porção"
+    },
+    {
+        "nome": "BATATA FRITA ",
+        "img": "img/porcoes/batata_frita.png",
+        "ingredientes": "300G",
+        "valor": "7.99",
+        "categoria": "Porção"
+    },
+    {
+        "nome": "MACAXEIRA FRITA",
+        "img": "img/porcoes/macaxeira.png",
+        "ingrediente.": "300G",
+        "valor": "7,99",
+        "categoria": "Porção"
+    },
+    {
+        "nome": "Guaraná 1L",
+        "img": "img/bebida/guarana-1l.png",
+        "valor": "4.99",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "GUARANA 2L",
+        "img": "img/bebida/guarana-2l.png",
+        "valor": "8.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "GUARANA KUAT 2L",
+        "img": "img/bebida/guarana-kuat-2l.png",
+        "valor": "7.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "PEPSI 1L",
+        "img": "img/bebida/pepsi-1l.png",
+        "valor": "4.99",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "COCA COLA 2L",
+        "img": "img/bebida/coca-cola-2l.png",
+        "valor": "9.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "SÃO GERALDO 2L",
+        "img": "img/bebida/sao-geraldo-2l.png",
+        "valor": "9.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "SÃO GERALDO 1L",
+        "img": "img/bebida/sao-geraldo-1l.png",
+        "valor": "6.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "SUCO JARRA 700ML",
+        "img": "img/bebida/jarra-suco.png",
+        "valor": "4.99",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "HEINEKEN",
+        "img": "img/bebida/long-neck-heineken.png",
+        "valor": "7.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "BUDWEISER",
+        "img": "img/bebida/long-neck-bw.png",
+        "valor": "7.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "STELLA ARTOIS",
+        "img": "img/bebida/long-neck-stella.png",
+        "ingredientes": "",
+        "valor": "7.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "SKOL ABRE FACIL",
+        "img": "img/bebida/long-neck-skol-abre_facil.png",
+        "valor": "7.00",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "IMPÉRIO LATA",
+        "img": "img/bebida/imperio-lata.png",
+        "valor": "3.50",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "PURO MALTE LATA",
+        "img": "img/bebida/puro-malte.png",
+        "valor": "3.50",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "SKOL LATA",
+        "img": "img/bebida/skol-lata.png",
+        "valor": "3.50",
+        "categoria": "Bebida"
+    },
+    {
+        "nome": "COCA COLA LATA",
+        "img": "img/bebida/coca-cola-lata.png",
+        "valor": "3.50",
+        "pesquisa": "",
+        "categoria": "Bebida"
+    }
+]

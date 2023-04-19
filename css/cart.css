@@ -1,0 +1,199 @@
+.cart {
+  margin: auto;
+  position: fixed;
+  top: 0px;
+  padding: 0% 1%;
+  left: 68%;
+  width: 30%;
+  background-color: #585b5c;
+  height: 100%;
+  transform: translateX(100%);
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.sectionTop {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.sectionTop p {
+  width: 100%;
+}
+
+.sectionTop i {
+  transform: scale(1.3);
+  cursor: pointer;
+  color: white;
+}
+
+.containerCart {
+  height: 80%;
+  overflow: auto;
+}
+
+.containerCart::-webkit-scrollbar {
+  width: 0px;
+}
+
+.qntPro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.CloseCartButton {
+  display: flex;
+  justify-content: flex-end;
+}
+.snacks {
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border: 1px solid #6e7274;
+  width: 90%;
+  padding: 10px;
+}
+
+.inforSnacks {
+  display: block;
+  width: 200px;
+  height: 50px;
+}
+
+.imgSnacks {
+  width: 100px;
+}
+
+.nameSnacks {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 11pt;
+  padding: 3px 0px;
+  color: white;
+}
+
+.valueSnacks {
+  font-size: 10pt;
+  padding: 3px 0px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: orange;
+}
+
+.qntSnacks {
+  outline: none;
+  max-width: 30px;
+  padding: 3px;
+  border: none;
+  border: 1px solid white;
+  background-color: #585b5c;
+  color: white;
+}
+
+.buttonDeleteSnacks {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #6e7274;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.buttonDeleteSnacks i {
+  color: white;
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+.buttonDeleteSnacks i:hover {
+  color: orange;
+}
+
+.containerAmount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 0%;
+  background-color: #585b5c;
+  border-top: #6e7274 1px solid;
+}
+
+.valueAmount {
+  width: 100%;
+  display: flex;
+  padding: 5px 0px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nameAmount {
+  color: #babcbd;
+  font-weight: 700;
+}
+
+.amount {
+  color: white;
+  letter-spacing: 2px;
+  padding: 0px 3px;
+}
+
+.buttonOrder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 80%;
+  height: 35px;
+  border: none;
+  background-color: orange;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 3px;
+  transition: all 0.5s;
+  color: black;
+}
+
+.buttonOrder:hover {
+  background-color: rgb(223, 145, 1);
+}
+
+.divSend {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+@media screen and (max-width: 950px) {
+  .cart {
+    left: 48%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cart {
+    width: 98%;
+    left: 0%;
+  }
+}
