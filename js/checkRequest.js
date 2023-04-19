@@ -2,15 +2,13 @@ let containerCheckRequest = document.querySelector(".containerCheckRequest");
 let containerRequest = document.querySelector(".containerRequest");
 let formRequest = document.querySelector("form");
 let checkAmount = document.querySelector(".checkAmount");
-
-
+let buttonOrder = document.querySelector(".buttonOrder");
+let qnt = document.querySelectorAll(".qntSnacks");
 let backendAddress = [];
-
-buttonOrder.addEventListener("click", checkRequest);
 
 backendAddress = JSON.parse(localStorage.getItem("backendAddress")) || [];
 
-  
+buttonOrder.addEventListener("click", checkRequest);
 
 function checkRequest() {
   removeCars();
@@ -23,17 +21,15 @@ function checkRequest() {
       "infoSnacksResquest"
     );
 
-   
+    infoSnacksResquest.innerHTML = `<p>${snacks.categoria} ${snacks.nome}</p>${snacks.valor}R$</p>`;
 
     imgSnaksRequest.src = snacks.img;
-    infoSnacksResquest.innerHTML = `<p>${snacks.categoria} ${snacks.nome}</p><p>${snacks.valor} R$</p>`;
 
     snacksRequest.appendChild(imgSnaksRequest);
     snacksRequest.appendChild(infoSnacksResquest);
     containerRequest.appendChild(snacksRequest);
     checkAmount.textContent = `Total: ${amount.textContent} R$`;
   });
-  
 }
 
 formRequest.addEventListener("submit", addBackendAddress);
@@ -69,7 +65,7 @@ function savedAddress() {
     formRequest.houseNumber.value = clients.houseNumber;
   });
 
-  console.log(backendAddress);
+ 
 }
 
 savedAddress();

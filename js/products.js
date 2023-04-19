@@ -14,6 +14,8 @@ async function initializeProducts() {
     allTheProducts = await productsResponse();
 
     generateProducts();
+    
+
   } catch (error) {
     alert("ola");
   }

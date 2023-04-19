@@ -2,7 +2,6 @@ let containerCart = document.querySelector(".containerCart");
 let qntPro = document.querySelector(".qntPro");
 let contCart = document.querySelector(".contCart");
 let amount = document.querySelector(".amount");
-let buttonOrder = document.querySelector(".buttonOrder");
 
 let backendCart = [];
 let backendAmount = 0;
@@ -93,7 +92,7 @@ function storeSnackCart() {
     if (backendCart.length > 0) {
       contCart.style.display = "flex";
     } else {
-      contCart.style.display = "";
+      contCart.style.display = "none";
     }
   });
 }
