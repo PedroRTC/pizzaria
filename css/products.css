@@ -14,7 +14,7 @@
   padding: 20px 0px;
 }
 
-.allTitles{
+.allTitles {
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 5px;
   font-size: 30pt;
@@ -151,7 +151,7 @@
 }
 
 .descriptionProducts p {
-  font-size: 10pt;
+  font-size: 12pt;
   font-family: "Josefin Sans", sans-serif;
   color: white;
   margin-bottom: 5px;
@@ -214,20 +214,14 @@
   }
   .card {
     width: 190px;
-    height: 250px;
+    height: 270px;
   }
 
   .imgProducts {
+    font-size: 10pt;
     width: 160px;
     height: 160px;
     transform: translateY(-50px);
     border-radius: 100%;
-  }
-
-  .descriptionProducts p {
-    font-size: 9pt;
-    font-family: "Josefin Sans", sans-serif;
-    color: white;
-    margin-bottom: 5px;
   }
 }

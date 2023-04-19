@@ -4,7 +4,6 @@ let contCart = document.querySelector(".contCart");
 let amount = document.querySelector(".amount");
 let buttonOrder = document.querySelector(".buttonOrder");
 
-
 let backendCart = [];
 let backendAmount = 0;
 let backendQnt = 0;
@@ -16,7 +15,6 @@ let arr = Number(backendAmount);
 amount.textContent = arr.toFixed(2);
 
 function addBackendCars(item) {
- 
   let dataAmount = (backendAmount = JSON.parse(
     localStorage.getItem("backendAmount")
   ));
@@ -92,10 +90,10 @@ function storeSnackCart() {
       deleteCartSnacks(cart, snacks, qntSnacks)
     );
 
-    if(backendCart.length > 0){
-      contCart.style.display="flex"
-    }else{
-      contCart.style.display=""
+    if (backendCart.length > 0) {
+      contCart.style.display = "flex";
+    } else {
+      contCart.style.display = "";
     }
   });
 }
@@ -140,4 +138,3 @@ function deleteCartSnacks(cart, snacks, qntSnacks) {
   localStorage.setItem("backendQnt", JSON.stringify(backendQnt)) || 0;
   localStorage.setItem("backendAmount", JSON.stringify(arr.toFixed(2)));
 }
-

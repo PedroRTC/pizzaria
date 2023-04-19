@@ -1,20 +1,16 @@
-
 let containerCheckRequest = document.querySelector(".containerCheckRequest");
 let containerRequest = document.querySelector(".containerRequest");
-let formRequest = document.querySelector("form")
+let formRequest = document.querySelector("form");
 let checkAmount = document.querySelector(".checkAmount");
 
-console.log(formRequest.client.value)
 
-let backendAddress=[]
+let backendAddress = [];
 
+buttonOrder.addEventListener("click", checkRequest);
 
+backendAddress = JSON.parse(localStorage.getItem("backendAddress")) || [];
 
-buttonOrder.addEventListener("click",checkRequest);
-
-backendAddress=JSON.parse(localStorage.getItem("backendAddress")) || []
-
-
+  
 
 function checkRequest() {
   removeCars();
@@ -27,6 +23,8 @@ function checkRequest() {
       "infoSnacksResquest"
     );
 
+   
+
     imgSnaksRequest.src = snacks.img;
     infoSnacksResquest.innerHTML = `<p>${snacks.categoria} ${snacks.nome}</p><p>${snacks.valor} R$</p>`;
 
@@ -35,54 +33,46 @@ function checkRequest() {
     containerRequest.appendChild(snacksRequest);
     checkAmount.textContent = `Total: ${amount.textContent} R$`;
   });
+  
 }
 
-formRequest.addEventListener("submit", addBackendAddress)
+formRequest.addEventListener("submit", addBackendAddress);
 
+function addBackendAddress(event) {
+  event.preventDefault();
 
-function addBackendAddress(event){
+  let newAddress = {
+    client: formRequest.client.value,
+    phone: formRequest.phone.value,
+    zipCode: formRequest.zipCode.value,
+    burgh: formRequest.burgh.value,
+    road: formRequest.road.value,
+    houseNumber: formRequest.houseNumber.value,
+  };
 
-    event.preventDefault()
+  if (backendAddress.length > 0) {
+    backendAddress.push();
+  } else {
+    backendAddress.push(newAddress);
+  }
 
-     let newAddress={
-       client : formRequest.client.value,
-       phone : formRequest.phone.value,
-       zipCode : formRequest.zipCode.value,
-       burgh : formRequest.burgh.value,
-       road : formRequest.road.value,
-       houseNumber : formRequest.houseNumber.value
-
-     }
-
-     if(backendAddress.length > 0){
-        backendAddress.push()
-     }else{
-        backendAddress.push(newAddress)
-        
-       
-     }
-
-     localStorage.setItem("backendAddress",JSON.stringify(backendAddress))
+  localStorage.setItem("backendAddress", JSON.stringify(backendAddress));
 }
 
+function savedAddress() {
+  backendAddress.map((clients) => {
+    formRequest.client.value = clients.client;
+    formRequest.phone.value = clients.phone;
+    formRequest.zipCode.value = clients.zipCode;
+    formRequest.burgh.value = clients.burgh;
+    formRequest.road.value = clients.road;
+    formRequest.houseNumber.value = clients.houseNumber;
+  });
 
-function savedAddress(){
-
-    backendAddress.map(clients=>{
-    formRequest.client.value = clients.client
-    formRequest.phone.value = clients.phone
-    formRequest.zipCode.value = clients.zipCode
-    formRequest.burgh.value = clients.burgh
-    formRequest.road.value = clients.road
-    formRequest.houseNumber.value = clients.houseNumber
-    })
-    
-    
-
-    console.log(backendAddress)
+  console.log(backendAddress);
 }
 
-savedAddress()
+savedAddress();
 
 /*
 
