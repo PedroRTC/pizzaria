@@ -287,70 +287,70 @@
         "categoria": "Esfiha"
     },
     {
-        "nome": "MISTA",
+        "nome": "Mista",
         "img": "img/esfiha/mista.png",
         "ingredientes": "mussarela,prezunto,cebola",
         "valor": "2.30",
         "categoria": "Esfiha"
     },
     {
-        "nome": "CHOCOLATE",
+        "nome": "Chocolate",
         "img": "img/esfiha/chocolate.png",
         "ingredientes": "mussarela, chocolate",
         "valor": "3.00",
         "categoria": "Esfiha"
     },
     {
-        "nome": "BANANA C/CANELA",
+        "nome": "Banana-c/canela",
         "img": "img/esfiha/banana-com-canela.png",
         "ingredientes": "mussarela, banana, canela, caramelo",
         "valor": "2.50",
         "categoria": "Esfiha"
     },
     {
-        "nome": "ABACAXI",
+        "nome": "Abacaxi",
         "img": "img/esfiha/abacaxi.png",
         "ingredientes": "mussarela, abacaxi",
         "valor": "2.50",
         "categoria": "Esfiha"
     },
     {
-        "nome": "ROMEU E JULIETA",
+        "nome": "Romeu e julieta",
         "img": "img/esfiha/romeu_e_julieta.png",
         "ingredientes": "mussarela, goiabada",
         "valor": "2.50",
         "categoria": "Esfiha"
     },
     {
-        "nome": "BOLINHAS 12UND",
+        "nome": "Bolinhas 12UND",
         "img": "img/porcoes/bolinha de queijo.png",
         "ingredientes": "queijo, camarão,peixe e carne do sol",
         "valor": "11.99",
         "categoria": "Porção"
     },
     {
-        "nome": "PASTELZINHO 12UND",
+        "nome": "Pastelzinho 12UND",
         "img": "img/porcoes/pastelzinho.png",
         "ingredientes": "queijo, mista, carne",
         "valor": "11.99",
         "categoria": "Porção"
     },
     {
-        "nome": "CAMARÃO",
+        "nome": "Camarão",
         "img": "img/porcoes/camarão.png",
         "ingredientes": "alho e óleo 300 g.",
         "valor": "19.99",
         "categoria": "Porção"
     },
     {
-        "nome": "BATATA FRITA ",
+        "nome": "Batata frita",
         "img": "img/porcoes/batata_frita.png",
         "ingredientes": "300G",
         "valor": "7.99",
         "categoria": "Porção"
     },
     {
-        "nome": "MACAXEIRA FRITA",
+        "nome": "Macaxeira frita",
         "img": "img/porcoes/macaxeira.png",
         "ingrediente.": "300G",
         "valor": "7,99",
@@ -364,70 +364,70 @@
         "categoria": "Bebida"
     },
     {
-        "nome": "GUARANA 2L",
+        "nome": "Guaraná 2L",
         "img": "img/bebida/guarana-2l.png",
         "valor": "8.00",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "GUARANA KUAT 2L",
+        "nome": "Guaraná kuat 2L",
         "img": "img/bebida/guarana-kuat-2l.png",
         "valor": "7.00",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "PEPSI 1L",
+        "nome": "Pepsi 1L",
         "img": "img/bebida/pepsi-1l.png",
         "valor": "4.99",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "COCA COLA 2L",
+        "nome": "Coca cola 2L",
         "img": "img/bebida/coca-cola-2l.png",
         "valor": "9.00",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "SÃO GERALDO 2L",
+        "nome": "São geraldo 2L",
         "img": "img/bebida/sao-geraldo-2l.png",
         "valor": "9.00",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "SÃO GERALDO 1L",
+        "nome": "São geraldo 1L",
         "img": "img/bebida/sao-geraldo-1l.png",
         "valor": "6.00",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "SUCO JARRA 700ML",
+        "nome": "Suco jarra 700ML",
         "img": "img/bebida/jarra-suco.png",
         "valor": "4.99",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "HEINEKEN",
+        "nome": "Heiniken",
         "img": "img/bebida/long-neck-heineken.png",
         "valor": "7.00",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "BUDWEISER",
+        "nome": "Budweiser",
         "img": "img/bebida/long-neck-bw.png",
         "valor": "7.00",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "STELLA ARTOIS",
+        "nome": "Stella artois",
         "img": "img/bebida/long-neck-stella.png",
         "ingredientes": "",
         "valor": "7.00",
@@ -435,34 +435,34 @@
         "categoria": "Bebida"
     },
     {
-        "nome": "SKOL ABRE FACIL",
+        "nome": "Skol abre facil",
         "img": "img/bebida/long-neck-skol-abre_facil.png",
         "valor": "7.00",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "IMPÉRIO LATA",
+        "nome": "Império lata",
         "img": "img/bebida/imperio-lata.png",
         "valor": "3.50",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "PURO MALTE LATA",
+        "nome": "Puro malte lata",
         "img": "img/bebida/puro-malte.png",
         "valor": "3.50",
         "pesquisa": "",
         "categoria": "Bebida"
     },
     {
-        "nome": "SKOL LATA",
+        "nome": "Skol lata",
         "img": "img/bebida/skol-lata.png",
         "valor": "3.50",
         "categoria": "Bebida"
     },
     {
-        "nome": "COCA COLA LATA",
+        "nome": "Coca cola lata",
         "img": "img/bebida/coca-cola-lata.png",
         "valor": "3.50",
         "pesquisa": "",
