@@ -138,6 +138,7 @@
 }
 
 .imgProducts {
+  margin: auto;
   width: 180px;
   height: 180px;
   transform: translateY(-50px);
@@ -165,7 +166,6 @@
 .captionProducts {
   opacity: 0.5;
 }
-
 .sectionCartValue {
   margin-top: 10px;
   display: flex;

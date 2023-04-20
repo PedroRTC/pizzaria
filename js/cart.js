@@ -29,6 +29,7 @@ function addBackendCars(item) {
   let novoLache = {
     nome: item.nome,
     categoria: item.categoria,
+    qntP:1,
     img: item.img,
     valor: item.valor,
   };
@@ -60,12 +61,12 @@ function storeSnackCart() {
     );
 
     qntSnacks.setAttribute("type", "number");
-    qntSnacks.setAttribute("value", "1");
-    qntSnacks.setAttribute("min", "1");
+    qntSnacks.setAttribute("value",`1`);
+    qntSnacks.setAttribute("min", `1`);
 
     imgSnacks.src = cart.img;
     nameSnacks.innerHTML = `${cart.categoria} ${cart.nome}<br>`;
-    valueSnacks.textContent = `  ${cart.valor}  `;
+    valueSnacks.textContent = `${cart.valor}`;
     buttonDeleteSnacks.innerHTML = `<i class="fa fa-trash" aria-hidden="true"></i>`;
 
     inforSnacks.appendChild(nameSnacks);
@@ -99,17 +100,36 @@ function storeSnackCart() {
 storeSnackCart();
 
 function changeQuantityProducts(cart, qntSnacks, valueSnacks) {
-  let valueSnacksArre = Number(cart.valor) * qntSnacks.value;
 
+  let valueSnacksArre = Number(cart.valor) * qntSnacks.value;
   valueSnacks.innerHTML = `${valueSnacksArre.toFixed(2)}`;
 
   let allValueSnacks = document.querySelectorAll(".valueSnacks");
   let sumValue = 0;
 
   allValueSnacks.forEach((element) => {
-    sumValue += Number(element.textContent);
-    amount.textContent = sumValue.toFixed(2);
-  });
+  sumValue += Number(element.textContent);
+  amount.textContent = sumValue.toFixed(2);
+});
+
+  backendCart.map(i=>{
+   
+    i.qntP=qntSnacks.value
+    
+  })
+
+
+
+  
+
+    
+    
+localStorage.setItem("backendCart", JSON.stringify(backendCart)) || [];
+   
+    
+ 
+
+     
 }
 
 function deleteCartSnacks(cart, snacks, qntSnacks) {

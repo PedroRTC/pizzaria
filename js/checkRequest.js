@@ -24,7 +24,7 @@ function checkRequest() {
       "infoSnacksResquest"
     );
 
-    infoSnacksResquest.innerHTML = `<p>${snacks.categoria} ${snacks.nome}</p>${snacks.valor}R$</p>`;
+    infoSnacksResquest.innerHTML = `<p>${snacks.categoria} ${snacks.nome}</p><p>QNT:${snacks.qntP}</p>${snacks.valor}R$</p>`;
 
     imgSnaksRequest.src = snacks.img;
 

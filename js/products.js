@@ -44,18 +44,23 @@ function generateProducts() {
     let valueCard = createElementWithClass("p", "valueCard");
     let cartFromCard = createElementWithClass("p", "cartFromCard");
 
+    
+
     imgProducts.src = products.img;
     descriptionProducts.innerHTML = `<p class="nameProducts">${products.nome}</p><p class="captionProducts">${products.categoria}</p>`;
-    valueCard.innerHTML = `R$ ` + products.valor;
+    valueCard.innerHTML = `R$` + products.valor;
     cartFromCard.innerHTML = `<i class="fa fa-shopping-basket icars" aria-hidden="true"></i>`;
-
+    
     sectionCartValue.appendChild(valueCard);
     sectionCartValue.appendChild(cartFromCard);
     card.appendChild(imgProducts);
     card.appendChild(descriptionProducts);
     card.appendChild(sectionCartValue);
-
-    cartFromCard.addEventListener("click", () => addBackendCars(products));
+    
+    
+    cartFromCard.addEventListener("click", () => {
+      addBackendCars(products);
+    })
 
     checkProductsCategory(products, card);
   });
@@ -72,6 +77,10 @@ function checkProductsCategory(checkProducts, selectCard) {
     containerPortions.appendChild(selectCard);
   }
 }
+
+
+
+
 
 function carrosselProdutos() {
   for (let index = 0; index < containerProducts.length; index++) {
