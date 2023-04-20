@@ -79,7 +79,6 @@ body::-webkit-scrollbar-thumb {
 
 .iconesTop li {
   padding: 5px;
-
 }
 
 .iconesTop i {
@@ -88,12 +87,9 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.5s;
 }
 
-.buttonMenu{
+.buttonMenu {
   font-size: 17pt;
-
 }
-
-
 
 .iconesTop i:hover {
   color: orange;
@@ -112,14 +108,14 @@ body::-webkit-scrollbar-thumb {
 .contCart {
   position: absolute;
   background-color: orange;
-  color:black;
+  color: black;
   font-size: 10pt;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  display:none;
+  display: none;
   justify-content: center;
   align-items: center;
   transform: translateY(-10px) translateX(-15px);
@@ -289,8 +285,6 @@ header {
   cursor: pointer;
   background-position: 30% 30%;
 }
-
-
 
 footer {
   text-align: center;

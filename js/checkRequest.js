@@ -1,6 +1,9 @@
 let containerCheckRequest = document.querySelector(".containerCheckRequest");
 let containerRequest = document.querySelector(".containerRequest");
+
 let formRequest = document.querySelector("form");
+let buttonRegisterAddress = document.querySelector(".buttonRegisterAddress");
+
 let checkAmount = document.querySelector(".checkAmount");
 let buttonOrder = document.querySelector(".buttonOrder");
 let qnt = document.querySelectorAll(".qntSnacks");
@@ -50,6 +53,10 @@ function addBackendAddress(event) {
     backendAddress.push();
   } else {
     backendAddress.push(newAddress);
+    buttonRegisterAddress.innerHTML = `Salvando <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>`;
+    setTimeout(() => {
+      checkAddress()
+    }, 3000);
   }
 
   localStorage.setItem("backendAddress", JSON.stringify(backendAddress));
@@ -64,11 +71,21 @@ function savedAddress() {
     formRequest.road.value = clients.road;
     formRequest.houseNumber.value = clients.houseNumber;
   });
-
+  checkAddress()
  
 }
 
 savedAddress();
+
+
+function checkAddress(){
+  if (backendAddress.length > 0) {
+    buttonRegisterAddress.style.background = "#F1F9F7";
+    buttonRegisterAddress.style.color = "#1D9D74";
+    buttonRegisterAddress.style.border = "1px solid #1D9D74";
+    buttonRegisterAddress.innerHTML = `Endereço Salvo <i class="fa fa-check-square-o" aria-hidden="true"></i>`;
+  }
+}
 
 /*
 
@@ -86,3 +103,5 @@ function SendRequest() {
 }
 
   */
+
+
