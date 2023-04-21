@@ -55,7 +55,7 @@ function addBackendAddress(event) {
     backendAddress.push(newAddress);
     buttonRegisterAddress.innerHTML = `Salvando <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>`;
     setTimeout(() => {
-      checkAddress()
+      checkAddress();
     }, 3000);
   }
 
@@ -71,14 +71,12 @@ function savedAddress() {
     formRequest.road.value = clients.road;
     formRequest.houseNumber.value = clients.houseNumber;
   });
-  checkAddress()
- 
+  checkAddress();
 }
 
 savedAddress();
 
-
-function checkAddress(){
+function checkAddress() {
   if (backendAddress.length > 0) {
     buttonRegisterAddress.style.background = "#F1F9F7";
     buttonRegisterAddress.style.color = "#1D9D74";
@@ -103,5 +101,3 @@ function SendRequest() {
 }
 
   */
-
-

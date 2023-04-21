@@ -29,7 +29,7 @@ function addBackendCars(item) {
   let novoLache = {
     nome: item.nome,
     categoria: item.categoria,
-    qntP:1,
+    qntP: 1,
     img: item.img,
     valor: item.valor,
   };
@@ -61,7 +61,7 @@ function storeSnackCart() {
     );
 
     qntSnacks.setAttribute("type", "number");
-    qntSnacks.setAttribute("value",`1`);
+    qntSnacks.setAttribute("value", `1`);
     qntSnacks.setAttribute("min", `1`);
 
     imgSnacks.src = cart.img;
@@ -100,7 +100,6 @@ function storeSnackCart() {
 storeSnackCart();
 
 function changeQuantityProducts(cart, qntSnacks, valueSnacks) {
-
   let valueSnacksArre = Number(cart.valor) * qntSnacks.value;
   valueSnacks.innerHTML = `${valueSnacksArre.toFixed(2)}`;
 
@@ -108,28 +107,15 @@ function changeQuantityProducts(cart, qntSnacks, valueSnacks) {
   let sumValue = 0;
 
   allValueSnacks.forEach((element) => {
-  sumValue += Number(element.textContent);
-  amount.textContent = sumValue.toFixed(2);
-});
+    sumValue += Number(element.textContent);
+    amount.textContent = sumValue.toFixed(2);
+  });
 
-  backendCart.map(i=>{
-   
-    i.qntP=qntSnacks.value
-    
-  })
+  backendCart.map((i) => {
+    i.qntP = qntSnacks.value;
+  });
 
-
-
-  
-
-    
-    
-localStorage.setItem("backendCart", JSON.stringify(backendCart)) || [];
-   
-    
- 
-
-     
+  localStorage.setItem("backendCart", JSON.stringify(backendCart)) || [];
 }
 
 function deleteCartSnacks(cart, snacks, qntSnacks) {
