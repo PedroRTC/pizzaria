@@ -3,6 +3,8 @@ let containerRequest = document.querySelector(".containerRequest");
 
 let formRequest = document.querySelector("form");
 let buttonRegisterAddress = document.querySelector(".buttonRegisterAddress");
+let buttonChangeAddress = document.querySelector(".changeAddress");
+let buttonCancelRequest = document.querySelector(".cancel");
 
 let checkAmount = document.querySelector(".checkAmount");
 let buttonOrder = document.querySelector(".buttonOrder");
@@ -12,6 +14,9 @@ let backendAddress = [];
 backendAddress = JSON.parse(localStorage.getItem("backendAddress")) || [];
 
 buttonOrder.addEventListener("click", checkRequest);
+formRequest.addEventListener("submit", addBackendAddress);
+buttonChangeAddress.addEventListener("click", changeAddress);
+buttonCancelRequest.addEventListener("click", cancelRequest);
 
 function checkRequest() {
   removeCars();
@@ -35,8 +40,6 @@ function checkRequest() {
   });
 }
 
-formRequest.addEventListener("submit", addBackendAddress);
-
 function addBackendAddress(event) {
   event.preventDefault();
 
@@ -54,6 +57,7 @@ function addBackendAddress(event) {
   } else {
     backendAddress.push(newAddress);
     buttonRegisterAddress.innerHTML = `Salvando <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>`;
+
     setTimeout(() => {
       checkAddress();
     }, 3000);
@@ -73,18 +77,48 @@ function savedAddress() {
   });
   checkAddress();
 }
-
 savedAddress();
 
+function changeAddress() {
+  formRequest.client.focus();
+  backendAddress =
+    JSON.stringify(localStorage.removeItem("backendAddress")) || [];
+  checkAddress();
+}
+
+
+
 function checkAddress() {
+  let input=document.querySelectorAll("form input")
+  
   if (backendAddress.length > 0) {
     buttonRegisterAddress.style.background = "#F1F9F7";
     buttonRegisterAddress.style.color = "#1D9D74";
     buttonRegisterAddress.style.border = "1px solid #1D9D74";
     buttonRegisterAddress.innerHTML = `Endereço Salvo <i class="fa fa-check-square-o" aria-hidden="true"></i>`;
+    buttonChangeAddress.style.display = "block";
+
+    input.forEach(element => {
+      element.setAttribute("readonly","readonly")
+      formRequest.style.opacity="0.7"
+   });
+
+  } else {
+    buttonRegisterAddress.style.background = "";
+    buttonRegisterAddress.style.color = "";
+    buttonRegisterAddress.style.border = "";
+    buttonRegisterAddress.innerHTML = `Salvar endereço`;
+    buttonChangeAddress.style.display = "none";
+    input.forEach(element => {
+      element.removeAttribute("readonly","readonly")
+      formRequest.style.opacity="1"
+   });
   }
 }
 
+function cancelRequest() {
+  containerCheckRequest.style.display = "none";
+}
 /*
 
 function SendRequest() {
