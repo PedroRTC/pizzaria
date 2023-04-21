@@ -61,7 +61,7 @@ function storeSnackCart() {
     );
 
     qntSnacks.setAttribute("type", "number");
-    qntSnacks.setAttribute("value", `1`);
+    qntSnacks.setAttribute("value", `${cart.qntP}`);
     qntSnacks.setAttribute("min", `1`);
 
     imgSnacks.src = cart.img;
@@ -97,10 +97,14 @@ function storeSnackCart() {
     }
   });
 }
+
 storeSnackCart();
 
 function changeQuantityProducts(cart, qntSnacks, valueSnacks) {
-  let valueSnacksArre = Number(cart.valor) * qntSnacks.value;
+  let valueSnacksArre = Number(cart.valor);
+
+  valueSnacksArre = valueSnacksArre * qntSnacks.value;
+
   valueSnacks.innerHTML = `${valueSnacksArre.toFixed(2)}`;
 
   let allValueSnacks = document.querySelectorAll(".valueSnacks");
@@ -112,13 +116,19 @@ function changeQuantityProducts(cart, qntSnacks, valueSnacks) {
   });
 
   backendCart.map((i) => {
-    i.qntP = qntSnacks.value;
+    let index = backendCart.indexOf(cart);
+    let il = backendCart.indexOf(i);
+    if (index == il) {
+      i.qntP = qntSnacks.value;
+      backendAmount = amount.textContent;
+    }
   });
 
   localStorage.setItem("backendCart", JSON.stringify(backendCart)) || [];
+  localStorage.setItem("backendAmount", JSON.stringify(backendAmount));
 }
 
-function deleteCartSnacks(cart, snacks, qntSnacks) {
+function deleteCartSnacks(cart, snacks,qntSnacks) {
   containerCart.removeChild(snacks);
   let index = backendCart.indexOf(cart);
 
@@ -134,7 +144,7 @@ function deleteCartSnacks(cart, snacks, qntSnacks) {
   qntPro.textContent = backendQnt;
   contCart.textContent = backendQnt;
 
-  let arr = Number(amount.textContent) - cart.valor * qntSnacks.value;
+  let arr = Number(amount.textContent) - cart.valor*qntSnacks.value;
   amount.textContent = arr.toFixed(2);
 
   localStorage.removeItem("backendAmount");

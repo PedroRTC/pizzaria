@@ -58,6 +58,9 @@ function generateProducts() {
     });
 
     checkProductsCategory(products, card);
+
+
+   
   });
 }
 
