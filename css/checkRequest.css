@@ -18,7 +18,8 @@
   width: 50%;
   border-radius: 5px;
   padding: 20px 0px;
-  font-family: "Dosis", sans-serif;
+  gap: 10px;
+  font-family: 'Raleway', sans-serif;
 }
 
 form {
@@ -39,19 +40,19 @@ form {
 
 form label {
   width: 100%;
-  font-weight: 600;
   color: black;
   letter-spacing: 1px;
-  font-size: 10pt;
+  font-size: 9pt;
+  font-weight: 600;
 }
 
 form input {
   width: 96%;
   outline: none;
-  padding: 7px 5px;
+  padding: 10px 5px;
   border: 1px solid gainsboro;
   border-radius: 5px;
-  color: dimgray;
+  color: rgb(150, 150, 150);
   background-color: transparent;
 }
 
@@ -126,7 +127,7 @@ form button {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Raleway', sans-serif; 
   font-weight: 600;
   font-size: 10pt;
   letter-spacing: 1px;
@@ -144,7 +145,7 @@ form button {
   height: 30px;
   padding: 0px 30px;
   cursor: pointer;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   font-weight: 600;
   border-radius: 3px;
