@@ -1,11 +1,11 @@
 let buttonMenu = document.querySelector(".buttonMenu");
-let buttonCars = document.querySelector(".buttonCars");
+let buttonCart = document.querySelector(".buttonCart");
 let CloseCartButton = document.querySelector(".CloseCartButton");
 let cart = document.querySelector(".cart");
 let menuSide = document.querySelector(".menuSide");
 
 buttonMenu.addEventListener("click", expandirMenu);
-buttonCars.addEventListener("click", expandirCarrinho);
+buttonCart.addEventListener("click", expandirCarrinho);
 CloseCartButton.addEventListener("click", removeCars);
 
 function expandirMenu() {
