@@ -19,7 +19,7 @@ buttonChangeAddress.addEventListener("click", changeAddress);
 buttonCancelRequest.addEventListener("click", cancelRequest);
 
 function checkRequest() {
-  removeCars();
+  removeCart();
   containerCheckRequest.style.display = "flex";
   backendCart.map((snacks) => {
     let snacksRequest = createElementWithClass("section", "snacksRequest");

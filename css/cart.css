@@ -45,7 +45,7 @@
   align-items: center;
   background-color: orange;
   color: black;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 600;
   font-size: 10pt;
   width: 18px;
@@ -155,6 +155,7 @@
   color: white;
   letter-spacing: 2px;
   padding: 0px 3px;
+  font-weight: 600;
 }
 
 .buttonOrder {
@@ -168,6 +169,7 @@
   background-color: orange;
   cursor: pointer;
   font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
   border-radius: 3px;
   transition: all 0.5s;
   color: black;

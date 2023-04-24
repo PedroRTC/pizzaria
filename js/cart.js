@@ -46,7 +46,7 @@ function addBackendCars(item) {
 }
 
 function storeSnackCart() {
-  qntPro.textContent = backendQnt;
+  qntPro.textContent = backendQnt; 
   contCart.textContent = backendQnt;
   backendCart.map((cart) => {
     let snacks = createElementWithClass("section", "snacks");

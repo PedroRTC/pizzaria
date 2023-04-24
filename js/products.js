@@ -3,6 +3,7 @@ let containerEsfiha = document.querySelector(".containerEsfiha");
 let containerDrinks = document.querySelector(".containerDrinks");
 let containerPortions = document.querySelector(".containerPortions");
 
+
 let containerProducts = document.querySelectorAll(".containerProducts");
 let arrowLeft = document.querySelectorAll(".arrowLeft");
 let arrowRight = document.querySelectorAll(".arrowRight");
@@ -99,3 +100,5 @@ function loadingSite() {
   containerLoading.appendChild(loading);
   document.body.appendChild(containerLoading);
 }
+
+
