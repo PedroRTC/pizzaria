@@ -141,9 +141,11 @@ form button {
   margin-top: 10px;
 }
 
-.sectionButtonRequest button {
+.sectionButtonRequest a {
   height: 30px;
   padding: 0px 30px;
+  display: flex;
+ align-items: center;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;

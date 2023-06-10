@@ -5,6 +5,7 @@ let formRequest = document.querySelector("form");
 let buttonRegisterAddress = document.querySelector(".buttonRegisterAddress");
 let buttonChangeAddress = document.querySelector(".changeAddress");
 let buttonCancelRequest = document.querySelector(".cancel");
+let buttonSend = document.querySelector(".send");
 
 let checkAmount = document.querySelector(".checkAmount");
 let buttonOrder = document.querySelector(".buttonOrder");
@@ -17,28 +18,7 @@ buttonOrder.addEventListener("click", checkRequest);
 formRequest.addEventListener("submit", addBackendAddress);
 buttonChangeAddress.addEventListener("click", changeAddress);
 buttonCancelRequest.addEventListener("click", cancelRequest);
-
-function checkRequest() {
-  removeCart();
-  containerCheckRequest.style.display = "flex";
-  backendCart.map((snacks) => {
-    let snacksRequest = createElementWithClass("section", "snacksRequest");
-    let imgSnaksRequest = createElementWithClass("img", "imgSnaksRequest");
-    let infoSnacksResquest = createElementWithClass(
-      "div",
-      "infoSnacksResquest"
-    );
-
-    infoSnacksResquest.innerHTML = `<p>${snacks.categoria} ${snacks.nome}</p><p>QNT:${snacks.qntP}</p>${snacks.valor}R$</p>`;
-
-    imgSnaksRequest.src = snacks.img;
-
-    snacksRequest.appendChild(imgSnaksRequest);
-    snacksRequest.appendChild(infoSnacksResquest);
-    containerRequest.appendChild(snacksRequest);
-    checkAmount.textContent = `Total: ${amount.textContent} R$`;
-  });
-}
+buttonSend.addEventListener("click", sendRequest);
 
 function addBackendAddress(event) {
   event.preventDefault();
@@ -66,6 +46,32 @@ function addBackendAddress(event) {
   localStorage.setItem("backendAddress", JSON.stringify(backendAddress));
 }
 
+function checkRequest() {
+  removeCart();
+  if (backendCart.length > 0) {
+    containerCheckRequest.style.display = "flex";
+  } else {
+    alert("Você não tem Pedido");
+  }
+  backendCart.map((snacks) => {
+    let snacksRequest = createElementWithClass("section", "snacksRequest");
+    let imgSnaksRequest = createElementWithClass("img", "imgSnaksRequest");
+    let infoSnacksResquest = createElementWithClass(
+      "div",
+      "infoSnacksResquest"
+    );
+
+    infoSnacksResquest.innerHTML = `<p>[${snacks.categoria} ${snacks.nome}</p>  <p>QNT:${snacks.qntP}</p>  <p>Valor:${snacks.valor}R$] </p>`;
+
+    imgSnaksRequest.src = snacks.img;
+
+    snacksRequest.appendChild(imgSnaksRequest);
+    snacksRequest.appendChild(infoSnacksResquest);
+    containerRequest.appendChild(snacksRequest);
+    checkAmount.textContent = `Total: ${amount.textContent} R$`;
+  });
+}
+
 function savedAddress() {
   backendAddress.map((clients) => {
     formRequest.client.value = clients.client;
@@ -86,11 +92,9 @@ function changeAddress() {
   checkAddress();
 }
 
-
-
 function checkAddress() {
-  let input=document.querySelectorAll("form input")
-  
+  let input = document.querySelectorAll("form input");
+
   if (backendAddress.length > 0) {
     buttonRegisterAddress.style.background = "#F1F9F7";
     buttonRegisterAddress.style.color = "#1D9D74";
@@ -98,40 +102,54 @@ function checkAddress() {
     buttonRegisterAddress.innerHTML = `Endereço Salvo <i class="fa fa-check-square-o" aria-hidden="true"></i>`;
     buttonChangeAddress.style.display = "block";
 
-    input.forEach(element => {
-      element.setAttribute("readonly","readonly")
-      formRequest.style.opacity="0.7"
-   });
-
+    input.forEach((element) => {
+      element.setAttribute("readonly", "readonly");
+      formRequest.style.opacity = "0.7";
+    });
   } else {
     buttonRegisterAddress.style.background = "";
     buttonRegisterAddress.style.color = "";
     buttonRegisterAddress.style.border = "";
     buttonRegisterAddress.innerHTML = `Salvar endereço`;
     buttonChangeAddress.style.display = "none";
-    input.forEach(element => {
-      element.removeAttribute("readonly","readonly")
-      formRequest.style.opacity="1"
-   });
+    input.forEach((element) => {
+      element.removeAttribute("readonly", "readonly");
+      formRequest.style.opacity = "1";
+    });
   }
 }
 
 function cancelRequest() {
   containerCheckRequest.style.display = "none";
-}
-/*
 
-function SendRequest() {
-  let pedido = containerCart.textContent.split("                   ");
+  setTimeout(() => {
+    window.document.location.reload();
+  }, 200);
+}
+
+function sendRequest() {
+  let pedido = containerRequest.textContent.split("         ");
   console.log(pedido);
 
-  buttonOrder.setAttribute(
-    "href",
-    `https://wa.me/5585988996987?text= 
-     PEDIDO:%20${pedido}%20
-     (TOTAL:%20${amount.textContent}R$)`
-  );
-  
-}
+  if (backendAddress.length > 0 && backendCart.length > 0) {
+    buttonSend.setAttribute(
+      "href",
+      `https://wa.me/5585981385233?text= 
+       NOME:${formRequest.client.value}--------------------
+       CONTATO:${formRequest.phone.value}------------------
+       CEP:${formRequest.zipCode.value}--------------------
+       BAIRRO:${formRequest.burgh.value}-------------------
+       RUA:${formRequest.road.value}-----------------------
+       NUMERO:${formRequest.houseNumber.value}------------------------------------
+       PEDIDO:---------------------------------------------------
+       ${pedido}-----------------------------------------------------------
+       (TOTAL:%20${amount.textContent}R$)`
+    );
+  } else {
+    alert("Endereço ou Pedido (ESTAR VAZIO)");
+  }
 
-  */
+  setTimeout(() => {
+    window.document.location.reload();
+  }, 500);
+}

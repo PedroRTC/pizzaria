@@ -46,7 +46,7 @@ function addBackendCars(item) {
 }
 
 function storeSnackCart() {
-  qntPro.textContent = backendQnt; 
+  qntPro.textContent = backendQnt;
   contCart.textContent = backendQnt;
   backendCart.map((cart) => {
     let snacks = createElementWithClass("section", "snacks");
@@ -65,8 +65,8 @@ function storeSnackCart() {
     qntSnacks.setAttribute("min", `1`);
 
     imgSnacks.src = cart.img;
-    nameSnacks.innerHTML = `${cart.categoria} ${cart.nome}<br>`;
-    valueSnacks.textContent = `${cart.valor}`;
+    nameSnacks.innerHTML = ` ${cart.categoria} ${cart.nome}  <br>`;
+    valueSnacks.innerHTML = `${cart.valor}`;
     buttonDeleteSnacks.innerHTML = `<i class="fa fa-trash" aria-hidden="true"></i>`;
 
     inforSnacks.appendChild(nameSnacks);
@@ -128,7 +128,7 @@ function changeQuantityProducts(cart, qntSnacks, valueSnacks) {
   localStorage.setItem("backendAmount", JSON.stringify(backendAmount));
 }
 
-function deleteCartSnacks(cart, snacks,qntSnacks) {
+function deleteCartSnacks(cart, snacks, qntSnacks) {
   containerCart.removeChild(snacks);
   let index = backendCart.indexOf(cart);
 
@@ -144,7 +144,7 @@ function deleteCartSnacks(cart, snacks,qntSnacks) {
   qntPro.textContent = backendQnt;
   contCart.textContent = backendQnt;
 
-  let arr = Number(amount.textContent) - cart.valor*qntSnacks.value;
+  let arr = Number(amount.textContent) - cart.valor * qntSnacks.value;
   amount.textContent = arr.toFixed(2);
 
   localStorage.removeItem("backendAmount");
