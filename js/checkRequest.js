@@ -104,7 +104,7 @@ function checkAddress() {
 
     input.forEach((element) => {
       element.setAttribute("readonly", "readonly");
-      formRequest.style.opacity = "0.7";
+      formRequest.style.opacity = "0.9";
     });
   } else {
     buttonRegisterAddress.style.background = "";
@@ -128,28 +128,33 @@ function cancelRequest() {
 }
 
 function sendRequest() {
+
+
+
+
   let pedido = containerRequest.textContent.split("         ");
   console.log(pedido);
 
   if (backendAddress.length > 0 && backendCart.length > 0) {
-    buttonSend.setAttribute(
-      "href",
-      `https://wa.me/5585981385233?text= 
-       NOME:${formRequest.client.value}--------------------
-       CONTATO:${formRequest.phone.value}------------------
-       CEP:${formRequest.zipCode.value}--------------------
-       BAIRRO:${formRequest.burgh.value}-------------------
-       RUA:${formRequest.road.value}-----------------------
-       NUMERO:${formRequest.houseNumber.value}------------------------------------
-       PEDIDO:---------------------------------------------------
-       ${pedido}-----------------------------------------------------------
-       (TOTAL:%20${amount.textContent}R$)`
-    );
+    clientPdf()
+      buttonSend.setAttribute(
+        "href",
+        `https://wa.me/5585981385233?text= 
+         NOME:${formRequest.client.value}--------------------
+         CONTATO:${formRequest.phone.value}------------------
+         CEP:${formRequest.zipCode.value}--------------------
+         BAIRRO:${formRequest.burgh.value}-------------------
+         RUA:${formRequest.road.value}-----------------------
+         NUMERO:${formRequest.houseNumber.value}------------------------------------
+         PEDIDO:---------------------------------------------------
+         ${pedido}-----------------------------------------------------------
+         (TOTAL:%20${amount.textContent}R$)`
+      );
+
   } else {
     alert("Endereço ou Pedido (ESTAR VAZIO)");
   }
+   
 
-  setTimeout(() => {
-    window.document.location.reload();
-  }, 500);
+  
 }
