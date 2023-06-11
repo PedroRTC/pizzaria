@@ -1,16 +1,13 @@
-function clientPdf(){
-
-  
+function clientPdf() {
   //Conteúdo transformado em PDF
 
-  let sectionCheckRequest=document.querySelector(".sectionCheckRequest")
-  let sectionButtonRequest=document.querySelector(".sectionButtonRequest")
-  
+  let sectionCheckRequest = document.querySelector(".sectionCheckRequest");
+  let sectionButtonRequest = document.querySelector(".sectionButtonRequest");
 
-   sectionCheckRequest.style.width="100%"
-   sectionCheckRequest.style.height="100%"
-   sectionButtonRequest.style.display="none"
-   
+  sectionCheckRequest.style.width = "100%";
+  sectionCheckRequest.style.height = "100%";
+  sectionButtonRequest.style.display = "none";
+
   // Configuração do arquivo final de PDF
 
   const options = {
@@ -23,18 +20,11 @@ function clientPdf(){
 
   // Gerar e baixar o PDF
 
+  html2pdf().set(options).from(sectionCheckRequest).save();
 
-    html2pdf().set(options).from(sectionCheckRequest).save();
-
-
-    
   setTimeout(() => {
-    sectionCheckRequest.style.width=""
-    sectionCheckRequest.style.height=""
-    sectionButtonRequest.style.display=""
+    sectionCheckRequest.style.width = "";
+    sectionCheckRequest.style.height = "";
+    sectionButtonRequest.style.display = "";
   }, 10000);
- 
 }
-
-  
-  

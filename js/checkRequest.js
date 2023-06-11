@@ -128,18 +128,14 @@ function cancelRequest() {
 }
 
 function sendRequest() {
-
-
-
-
   let pedido = containerRequest.textContent.split("         ");
   console.log(pedido);
 
   if (backendAddress.length > 0 && backendCart.length > 0) {
-    clientPdf()
-      buttonSend.setAttribute(
-        "href",
-        `https://wa.me/5585981385233?text= 
+    clientPdf();
+    buttonSend.setAttribute(
+      "href",
+      `https://wa.me/5585981385233?text= 
          NOME:${formRequest.client.value}--------------------
          CONTATO:${formRequest.phone.value}------------------
          CEP:${formRequest.zipCode.value}--------------------
@@ -149,12 +145,8 @@ function sendRequest() {
          PEDIDO:---------------------------------------------------
          ${pedido}-----------------------------------------------------------
          (TOTAL:%20${amount.textContent}R$)`
-      );
-
+    );
   } else {
     alert("Endereço ou Pedido (ESTAR VAZIO)");
   }
-   
-
-  
 }
