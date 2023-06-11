@@ -132,7 +132,7 @@ function sendRequest() {
   console.log(pedido);
 
   if (backendAddress.length > 0 && backendCart.length > 0) {
-   
+
     buttonSend.setAttribute(
       "href",
       `https://wa.me/5585981385233?text= 
@@ -147,7 +147,7 @@ function sendRequest() {
          (TOTAL:%20${amount.textContent}R$)`
     );
 
-    clientPdf();
+ 
   } else {
     alert("Endereço ou Pedido (ESTAR VAZIO)");
   }
