@@ -1,5 +1,5 @@
 
-buttonSend.addEventListener("click", clientPdf);
+
 
 function clientPdf() {
   //Conteúdo transformado em PDF

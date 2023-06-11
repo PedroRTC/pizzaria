@@ -8,6 +8,7 @@ let dateRequest = document.querySelector(".dateRequest");
 buttonCart.addEventListener("click", expandCart);
 CloseCartButton.addEventListener("click", removeCart);
 buttonMenu.addEventListener("click", expandMenu);
+let buttonSend = document.querySelector(".send");
 
 
  // Data do Pedido
@@ -76,3 +77,9 @@ function expandCart() {
 function removeCart() {
   cart.style.transform = "translate(130%)";
 }
+
+
+buttonSend.addEventListener("click",()=>{
+   clientPdf()
+   sendRequest()
+})

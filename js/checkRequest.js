@@ -5,7 +5,7 @@ let formRequest = document.querySelector("form");
 let buttonRegisterAddress = document.querySelector(".buttonRegisterAddress");
 let buttonChangeAddress = document.querySelector(".changeAddress");
 let buttonCancelRequest = document.querySelector(".cancel");
-let buttonSend = document.querySelector(".send");
+
 
 let checkAmount = document.querySelector(".checkAmount");
 let buttonOrder = document.querySelector(".buttonOrder");
@@ -18,7 +18,7 @@ buttonOrder.addEventListener("click", checkRequest);
 formRequest.addEventListener("submit", addBackendAddress);
 buttonChangeAddress.addEventListener("click", changeAddress);
 buttonCancelRequest.addEventListener("click", cancelRequest);
-buttonSend.addEventListener("click", sendRequest);
+
 
 function addBackendAddress(event) {
   event.preventDefault();
