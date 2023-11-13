@@ -122,9 +122,6 @@ function checkAddress() {
 function cancelRequest() {
   containerCheckRequest.style.display = "none";
 
-  setTimeout(() => {
-    window.document.location.reload();
-  }, 200);
 }
 
 function sendRequest() {

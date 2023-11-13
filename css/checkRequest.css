@@ -13,8 +13,7 @@
 
 .sectionCheckRequest {
   font-family: "Dosis", sans-serif;
-  display: flex;
-  flex-direction: column;
+  
   background-color: white;
   width: 50%;
   border-radius: 5px;

@@ -15,8 +15,8 @@ amount.textContent = arr.toFixed(2);
 
 function addBackendCars(item) {
   let dataAmount = (backendAmount = JSON.parse(
-    localStorage.getItem("backendAmount")
-  ));
+    localStorage.getItem("backendAmount") || 0
+  )) 
   backendQnt++;
   backendAmount = item.valor;
 
@@ -39,10 +39,13 @@ function addBackendCars(item) {
   localStorage.setItem("backendCart", JSON.stringify(backendCart)) || [];
   localStorage.setItem("backendQnt", JSON.stringify(backendQnt));
   localStorage.setItem("backendAmount", JSON.stringify(backendAmount));
-  loadingSite();
-  setTimeout(() => {
-    location.reload();
-  }, 2000);
+ 
+
+    
+    containerCart.innerHTML=""
+     amount.textContent = backendAmount
+    storeSnackCart()
+    loadingSite()
 }
 
 function storeSnackCart() {

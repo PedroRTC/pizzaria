@@ -99,6 +99,10 @@ function loadingSite() {
   loading.classList.add("loading");
   containerLoading.appendChild(loading);
   document.body.appendChild(containerLoading);
+
+  setTimeout(() => {
+    document.body.removeChild(containerLoading)
+  }, 3000);
 }
 
 
