@@ -20,14 +20,17 @@ buttonChangeAddress.addEventListener("click", changeAddress);
 buttonCancelRequest.addEventListener("click", cancelRequest);
 
 
+
 function addBackendAddress(event) {
   event.preventDefault();
+
 
   let newAddress = {
     client: formRequest.client.value,
     phone: formRequest.phone.value,
     zipCode: formRequest.zipCode.value,
-    burgh: formRequest.burgh.value,
+    burghValue: formRequest.burgh.value,
+    burgh: formRequest.burgh.textContent,
     road: formRequest.road.value,
     houseNumber: formRequest.houseNumber.value,
   };
@@ -102,6 +105,8 @@ function checkAddress() {
     buttonRegisterAddress.innerHTML = `Endereço Salvo <i class="fa fa-check-square-o" aria-hidden="true"></i>`;
     buttonChangeAddress.style.display = "block";
 
+    formRequest.burgh.setAttribute("disabled", "disabled");
+
     input.forEach((element) => {
       element.setAttribute("readonly", "readonly");
       formRequest.style.opacity = "0.9";
@@ -112,6 +117,7 @@ function checkAddress() {
     buttonRegisterAddress.style.border = "";
     buttonRegisterAddress.innerHTML = `Salvar endereço`;
     buttonChangeAddress.style.display = "none";
+    formRequest.burgh.removeAttribute("disabled", "disabled");
     input.forEach((element) => {
       element.removeAttribute("readonly", "readonly");
       formRequest.style.opacity = "1";

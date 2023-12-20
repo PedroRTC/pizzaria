@@ -47,7 +47,7 @@ form label {
   font-weight: 600;
 }
 
-form input {
+form input, select {
   width: 96%;
   outline: none;
   padding: 10px 5px;
@@ -56,6 +56,8 @@ form input {
   color: rgb(79, 79, 79);
   background-color: transparent;
 }
+
+
 
 form input::placeholder {
   color: rgb(234, 234, 234);
